@@ -3,8 +3,7 @@
 Project that performs the pull request query in a given project/repository.
 
 ## Context
-Code review is important to ensure the security and availability of the service or product. For this, a pull request visualization automation script in 'open' status is created.
-In this way, it is possible to have greater control over codes that are not yet accessible.
+Code review is important to ensure the security and availability of the service or product. In order to have a better management, some processes are automated by script that can help in everyday life. Among them is a simple script that shows open PRs.
 
 - The script uses a GitHub API to return all Pull Requests that are open.
 
@@ -13,16 +12,13 @@ Example of generate script output:
 ```
 #Report(With Pull Requests 'OPEN')
 #microsoft/mu_basecore
-Bugfix: Special Separation Region Logic Can Cause Duplicate Memory Map Entries - https://api.github.com/repos/microsoft/mu_basecore/pulls/153     
-Activate Improved Memory Protection Init Functionality - https://api.github.com/repos/microsoft/mu_basecore/pulls/152
-Handle Special Region Overlap - https://api.github.com/repos/microsoft/mu_basecore/pulls/151
-Fixing local build for PolicyDxe - https://api.github.com/repos/microsoft/mu_basecore/pulls/150
-Check Page Table on Protection Policy Application - https://api.github.com/repos/microsoft/mu_basecore/pulls/149
-Generalize List Functions in MemoryProtectionSupport - https://api.github.com/repos/microsoft/mu_basecore/pulls/148
-Fixing bug in GuidCheck plugin + cleanup - https://api.github.com/repos/microsoft/mu_basecore/pulls/147
-Update Special Region Logic to Handle Broken Cases - https://api.github.com/repos/microsoft/mu_basecore/pulls/146
-Add the Interrupt Entry Code to the Special Region List - https://api.github.com/repos/microsoft/mu_basecore/pulls/145
-Add Logic to Merge the Memory Map by Attributes - https://api.github.com/repos/microsoft/mu_basecore/pulls/144
+[REBASE && FF] Cherry-pick Memory Protection Init Updates - https://api.github.com/repos/microsoft/mu_basecore/pulls/155
+Add CodeQL build plugin - https://api.github.com/repos/microsoft/mu_basecore/pulls/154
+Fix buffer overflow when merging guard pages in MergeMemoryMap - https://api.github.com/repos/microsoft/mu_basecore/pulls/126
+CodeQL Fixes - Second Pass - https://api.github.com/repos/microsoft/mu_basecore/pulls/125
+Improve log messages for DependencyCheck, UncrustifyCheck, and SpellCheck - https://api.github.com/repos/microsoft/mu_basecore/pulls/115
+Adding Microsoft SECURITY.MD - https://api.github.com/repos/microsoft/mu_basecore/pulls/109
+Convert GCC azure pipeline to use docker image - https://api.github.com/repos/microsoft/mu_basecore/pulls/108
 ```
 
 
@@ -50,6 +46,6 @@ Add Logic to Merge the Memory Map by Attributes - https://api.github.com/repos/m
 ### Run
 - Build project(install dependencies)
 - Set command `py main.py`
-- Put project name
-- Put repo name
+- Enter the name of the chosen project
+- Enter the name of the chosen repository
 ---
